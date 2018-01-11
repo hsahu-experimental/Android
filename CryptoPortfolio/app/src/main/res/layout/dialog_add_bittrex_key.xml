@@ -31,7 +31,7 @@
                 android:hint="@string/hint_api_key" />
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
@@ -41,6 +41,14 @@
                 android:singleLine="true"
                 android:hint="@string/hint_api_secret" />
         </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:padding="5dp"
+            android:drawableLeft="@drawable/ic_info"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Make sure that key has only READ access"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
         <Button
             android:id="@+id/add_bittrex_button"
             android:layout_width="match_parent"

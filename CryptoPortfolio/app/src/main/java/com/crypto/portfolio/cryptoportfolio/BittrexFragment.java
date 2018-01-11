@@ -1,9 +1,12 @@
 package com.crypto.portfolio.cryptoportfolio;
 
 import android.app.AlertDialog;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +36,20 @@ public class BittrexFragment extends Fragment {
                     }
                 });
                 dialog.show();
+            }
+        });
+
+        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.bittrexRefresh);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(getContext(), "bittrex Data updated", Toast.LENGTH_SHORT).show();
+                        swipeRefreshLayout.setRefreshing(false);
+                    }
+                },3000);
             }
         });
 

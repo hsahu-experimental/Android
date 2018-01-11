@@ -5,15 +5,19 @@
     android:layout_height="match_parent"
     tools:context="com.crypto.portfolio.cryptoportfolio.TabbedFragment">
 
-    <TextView
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/binanceRefresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Please add binance account"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="25sp" />
+        android:layout_height="wrap_content">
 
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please add binance account"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/addBinanceKey"
@@ -23,5 +27,6 @@
         android:layout_margin="@dimen/fab_margin"
         android:backgroundTint="@color/colorPrimary"
         app:srcCompat="@drawable/ic_add_black_24dp" />
+
 
 </FrameLayout>
