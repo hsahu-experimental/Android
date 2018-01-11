@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cryptocurrency Portfolio</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hint_api_key">API Key</string>
+    <string name="hint_api_secret">API Secret</string>
+</resources>
