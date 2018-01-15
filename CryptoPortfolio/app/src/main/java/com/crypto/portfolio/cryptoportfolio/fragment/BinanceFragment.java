@@ -14,31 +14,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crypto.portfolio.cryptoportfolio.R;
+import com.crypto.portfolio.cryptoportfolio.fragmentstate.BinanceState;
 import com.crypto.portfolio.cryptoportfolio.utils.SharedPreferencesUtils;
 
 public class BinanceFragment extends Fragment {
 
-    String binanceKey;
-    String binanceSecret;
+    BinanceState binanceState = new BinanceState();
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    /**
+     * render add binance account layout
+     * @param inflater
+     * @param container
+     * @return
+     */
+    private View inflateAddBinanceAccountFragment(LayoutInflater inflater, ViewGroup container) {
 
         View view =  inflater.inflate(R.layout.fragment_binance, container, false);
 
         final FloatingActionButton fab = view.findViewById(R.id.addBinanceKey);
 
         final TextView binanceBackgroundText = view.findViewById(R.id.binanceBackgroundText);
-
-        binanceKey = SharedPreferencesUtils.get(SharedPreferencesUtils.BINANCE_KEY_NAME, getContext());
-        binanceSecret = SharedPreferencesUtils.get(SharedPreferencesUtils.BINANCE_SECRET_NAME, getContext());
-
-        if (binanceKey != null && binanceSecret != null) {
-            binanceBackgroundText.setText("account exists.. hitting binance api");
-            fab.setVisibility(View.GONE);
-        } else {
-            fab.setVisibility(View.VISIBLE);
-        }
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,9 +47,9 @@ public class BinanceFragment extends Fragment {
                     public void onClick(View view) {
                         EditText binance_key = mView.findViewById(R.id.binance_key);
                         EditText binance_secret = mView.findViewById(R.id.binance_secret);
-                        binanceKey = binance_secret.getText().toString();
-                        binanceSecret = binance_secret.getText().toString();
-                        SharedPreferencesUtils.setBinancePreference(binanceKey , binanceSecret);
+                        binanceState.setBinanceKey(binance_key.getText().toString());
+                        binanceState.setBinanceSecret(binance_secret.getText().toString());
+                        SharedPreferencesUtils.setBinancePreference(binanceState.getBinanceKey() , binanceState.getBinanceKey());
                         Toast.makeText(getContext(), "Binance key added", Toast.LENGTH_SHORT).show();
                         dialog.dismiss();
                         fab.setVisibility(View.GONE);
@@ -64,6 +59,20 @@ public class BinanceFragment extends Fragment {
                 dialog.show();
             }
         });
+
+        return view;
+    }
+
+    /**
+     * render binance account balance layout
+     * @param inflater
+     * @param container
+     * @return
+     */
+    private View inflateBinanceAccountBalanceFragment(LayoutInflater inflater, ViewGroup container) {
+
+        View view =  inflater.inflate(R.layout.binance_account_info_layout, container, false);
+
         final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.binanceRefresh);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -78,5 +87,19 @@ public class BinanceFragment extends Fragment {
             }
         });
         return view;
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        binanceState.setBinanceKey(SharedPreferencesUtils.get(SharedPreferencesUtils.BINANCE_KEY_NAME, getContext()));
+        binanceState.setBinanceSecret(SharedPreferencesUtils.get(SharedPreferencesUtils.BINANCE_SECRET_NAME, getContext()));
+
+        if (binanceState.getBinanceKey() != null && binanceState.getBinanceSecret() != null) {
+            return inflateBinanceAccountBalanceFragment(inflater, container);
+        } else {
+            return inflateAddBinanceAccountFragment(inflater, container);
+        }
     }
 }

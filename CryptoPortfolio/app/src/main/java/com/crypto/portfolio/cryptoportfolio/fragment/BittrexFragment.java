@@ -6,7 +6,6 @@ import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,15 +14,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crypto.portfolio.cryptoportfolio.R;
+import com.crypto.portfolio.cryptoportfolio.fragmentstate.BittrexState;
 import com.crypto.portfolio.cryptoportfolio.utils.SharedPreferencesUtils;
 
 public class BittrexFragment extends Fragment {
 
-    String bittrexKey;
-    String bittrexSecret;
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    BittrexState bittrexState = new BittrexState();
+    /**
+     * render add bittrex account layout
+     * @param inflater
+     * @param container
+     * @return
+     */
+    private View inflateAddBittrexAccountFragment(LayoutInflater inflater, ViewGroup container) {
 
         View view = inflater.inflate(R.layout.fragment_bittrex, container, false);
 
@@ -31,15 +34,6 @@ public class BittrexFragment extends Fragment {
 
         final TextView bittrexBackgroundText = view.findViewById(R.id.bittrexBackgroundText);
 
-        bittrexKey = SharedPreferencesUtils.get(SharedPreferencesUtils.BITTREX_KEY_NAME, getContext());
-        bittrexSecret = SharedPreferencesUtils.get(SharedPreferencesUtils.BITTREX_SECRET_NAME, getContext());
-
-        if (bittrexKey != null && bittrexSecret != null) {
-            bittrexBackgroundText.setText("account exists.. hitting bittrex api");
-            fab.setVisibility(View.GONE);
-        } else {
-            fab.setVisibility(View.VISIBLE);
-        }
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,12 +45,11 @@ public class BittrexFragment extends Fragment {
                 mView.findViewById(R.id.add_bittrex_button).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
                         EditText bittrex_key = mView.findViewById(R.id.bittrex_key);
                         EditText bittrex_secret = mView.findViewById(R.id.bittrex_secret);
-                        bittrexKey = bittrex_key.getText().toString();
-                        bittrexSecret = bittrex_secret.getText().toString();
-                        SharedPreferencesUtils.setBittrexPreference(bittrexKey, bittrexSecret);
+                        bittrexState.setBittrexKey(bittrex_key.getText().toString());
+                        bittrexState.setBittrexSecret(bittrex_secret.getText().toString());
+                        SharedPreferencesUtils.setBittrexPreference(bittrexState.getBittrexKey(), bittrexState.getBittrexSecret());
                         Toast.makeText(getContext(), "Bittrex key added", Toast.LENGTH_SHORT).show();
                         dialog.dismiss();
                         fab.setVisibility(View.GONE);
@@ -66,6 +59,18 @@ public class BittrexFragment extends Fragment {
                 dialog.show();
             }
         });
+
+        return view;
+    }
+
+    /**
+     * render bittrex account balance layout
+     * @param inflater
+     * @param container
+     * @return
+     */
+    private View inflateBittrexAccountBalanceFragment(LayoutInflater inflater, ViewGroup container) {
+        View view = inflater.inflate(R.layout.bittrex_account_info_layout, container, false);
 
         final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.bittrexRefresh);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -84,4 +89,16 @@ public class BittrexFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        bittrexState.setBittrexKey(SharedPreferencesUtils.get(SharedPreferencesUtils.BITTREX_KEY_NAME, getContext()));
+        bittrexState.setBittrexSecret(SharedPreferencesUtils.get(SharedPreferencesUtils.BITTREX_SECRET_NAME, getContext()));
+
+        if (bittrexState.getBittrexKey() != null && bittrexState.getBittrexSecret() != null) {
+            return inflateBittrexAccountBalanceFragment(inflater, container);
+        } else {
+            return inflateAddBittrexAccountFragment(inflater,container);
+        }
+    }
 }
