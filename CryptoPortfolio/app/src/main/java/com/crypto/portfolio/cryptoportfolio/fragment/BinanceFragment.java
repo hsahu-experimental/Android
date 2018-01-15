@@ -1,4 +1,4 @@
-package com.crypto.portfolio.cryptoportfolio;
+package com.crypto.portfolio.cryptoportfolio.fragment;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import com.crypto.portfolio.cryptoportfolio.R;
 
 public class BinanceFragment extends Fragment {
     @Override
