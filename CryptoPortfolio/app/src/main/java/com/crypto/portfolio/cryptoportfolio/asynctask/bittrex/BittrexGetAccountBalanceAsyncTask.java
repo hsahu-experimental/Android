@@ -9,10 +9,13 @@ import android.widget.TextView;
 import com.crypto.portfolio.cryptoportfolio.R;
 import com.crypto.portfolio.cryptoportfolio.adapter.bittrex.AccountBalanceRecyclerViewAdapter;
 import com.crypto.portfolio.cryptoportfolio.apiclient.BittrexClient;
-import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.BittrexResponse;
+import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.account.AccountBalanceResponse;
+import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.market.MarketSummaryDTO;
 import com.crypto.portfolio.cryptoportfolio.fragmentstate.BittrexState;
 
-public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, BittrexResponse> {
+import java.util.Map;
+
+public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, AccountBalanceResponse> {
 
     private View view;
     private BittrexClient bittrexClient;
@@ -29,20 +32,28 @@ public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Bit
     }
 
     @Override
-    protected BittrexResponse doInBackground(Void... voids) {
-        BittrexResponse bittrexResponse =  bittrexClient
+    protected AccountBalanceResponse doInBackground(Void... voids) {
+        AccountBalanceResponse accountBalanceResponse =  bittrexClient
                 .getAccountBalance(bittrexState.getBittrexKey(), bittrexState.getBittrexSecret());
-        bittrexResponse.setResult(BittrexState.filter(bittrexResponse.getResult()));
-        bittrexState.setGetBalanceDTO(bittrexResponse.getResult());
-        return bittrexResponse;
+
+        Map<String, MarketSummaryDTO> marketSummaryDTOMap = bittrexClient.getMarketSummary();
+        bittrexState.setMarketSummaryMap(marketSummaryDTOMap);
+        accountBalanceResponse.setResult(bittrexState.filterAndSetPrice(accountBalanceResponse.getResult()));
+        bittrexState.setGetBalanceDTO(accountBalanceResponse.getResult());
+        return accountBalanceResponse;
     }
 
     @Override
-    protected void onPostExecute(BittrexResponse bittrexResponse) {
-        super.onPostExecute(bittrexResponse);
-        ((TextView)view.findViewById(R.id.bittrexBackgroundText)).setText(bittrexResponse.toString());
+    protected void onPostExecute(AccountBalanceResponse accountBalanceResponse) {
+        super.onPostExecute(accountBalanceResponse);
+        String totalBTC = String.format("%.8f", bittrexState.getTotalBTC()) + " BTC";
+        String usdValue = String.format("%.2f", bittrexState.getMarketSummaryMap().get("USDT-BTC").getLast() * bittrexState.getTotalBTC()) + " USD";
+        ((TextView)view.findViewById(R.id.usdValue)).setText(usdValue);
+        ((TextView)view.findViewById(R.id.btcValue)).setText(totalBTC);
         ((SwipeRefreshLayout)view.findViewById(R.id.bittrexRefresh)).setRefreshing(false);
         mAdapter = new AccountBalanceRecyclerViewAdapter(bittrexState.getGetBalanceDTO());
         mRecyclerView.setAdapter(mAdapter);
+        view.findViewById(R.id.holdingsCard).setVisibility(View.VISIBLE);
+        view.findViewById(R.id.btcCard).setVisibility(View.VISIBLE);
     }
 }

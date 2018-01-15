@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.crypto.portfolio.cryptoportfolio.R;
-import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.GetBalanceDTO;
+import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.account.GetBalanceDTO;
 
 import java.util.List;
 
@@ -28,10 +28,15 @@ public class AccountBalanceRecyclerViewAdapter extends RecyclerView.Adapter<Curr
     @Override
     public void onBindViewHolder(CurrencyViewHolder holder, int position) {
         GetBalanceDTO currency = currencyList.get(position);
-        holder.currencyName.setText(currency.getCurrency().toString());
-        holder.currencyCount.setText(String.format("%.4f", currency.getBalance()));
-        holder.currencyUnitPrice.setText(String.format("%.4f", currency.getBalance()));
-        holder.currenctTotalPrice.setText(String.format("%.4f", currency.getBalance()));
+        holder.currencyName.setText(currency.getCurrency());
+        holder.currencyCount.setText(String.format("%.6f", currency.getBalance()));
+        if (currency.getCurrentPrice() != null) {
+            holder.currencyUnitPrice.setText(String.format("%.8f", currency.getCurrentPrice()));
+            holder.currenctTotalPrice.setText(String.format("%.8f", currency.getBalance() * currency.getCurrentPrice()));
+        } else {
+            holder.currencyUnitPrice.setText("--");
+            holder.currenctTotalPrice.setText("--");
+        }
     }
 
     @Override

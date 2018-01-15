@@ -32,7 +32,7 @@ public class OpenOrderRecyclerViewAdapter extends RecyclerView.Adapter<OpenOrder
         holder.exchangeName.setText(openOrder.getExchange());
         holder.orderType.setText(openOrder.getOrderType());
         // just for fun
-        if (position % 2 == 0) {
+        if (openOrder.getOrderType().equalsIgnoreCase("LIMIT_SELL")) {
             holder.orderType.setTextColor(Color.parseColor("#880E4F"));
         } else {
             holder.orderType.setTextColor(Color.parseColor("#00695C"));

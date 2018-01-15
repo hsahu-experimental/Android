@@ -1,14 +1,14 @@
-package com.crypto.portfolio.cryptoportfolio.dto.response.bittrex;
+package com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.market;
 
 import java.util.List;
 
-public class BittrexResponse {
+public class MarketSummaryResponse {
 
     private Boolean success;
     private String message;
-    private List<GetBalanceDTO> result;
+    private List<MarketSummaryDTO> result;
 
-    public BittrexResponse() {
+    public MarketSummaryResponse() {
         super();
     }
 
@@ -28,17 +28,17 @@ public class BittrexResponse {
         this.message = message;
     }
 
-    public List<GetBalanceDTO> getResult() {
+    public List<MarketSummaryDTO> getResult() {
         return result;
     }
 
-    public void setResult(List<GetBalanceDTO> result) {
+    public void setResult(List<MarketSummaryDTO> result) {
         this.result = result;
     }
 
     @Override
     public String toString() {
-        return "BittrexResponse{" +
+        return "MarketSummaryResponse{" +
                 "success=" + success +
                 ", message='" + message + '\'' +
                 ", result=" + result +

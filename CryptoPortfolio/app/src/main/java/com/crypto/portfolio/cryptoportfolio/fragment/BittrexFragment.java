@@ -77,6 +77,13 @@ public class BittrexFragment extends Fragment {
     RecyclerView mGetOpenOrderRecyclerView;
     RecyclerView.LayoutManager mGetOpenOrderLayoutManager;
     RecyclerView.Adapter mGetOpenOrderAdapter;
+    SwipeRefreshLayout swipeRefreshLayout;
+
+    private void onRefesh(View view){
+        swipeRefreshLayout.setRefreshing(true);
+        new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
+        new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
+    }
 
     /**
      * render bittrex account balance layout
@@ -92,26 +99,16 @@ public class BittrexFragment extends Fragment {
         mGetAccountBalanceLayoutManager = new LinearLayoutManager(getActivity());
         mGetAccountBalanceRecyclerView.setLayoutManager(mGetAccountBalanceLayoutManager);
 
-
+        swipeRefreshLayout = view.findViewById(R.id.bittrexRefresh);
         mGetOpenOrderRecyclerView = view.findViewById(R.id.bittrexGetOpenOrderRecyclerView);
         mGetOpenOrderLayoutManager = new LinearLayoutManager(getActivity());
         mGetOpenOrderRecyclerView.setLayoutManager(mGetOpenOrderLayoutManager);
 
-        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.bittrexRefresh);
-
-        swipeRefreshLayout.setRefreshing(true);
-
-        new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
-
-        new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
-
+        onRefesh(view);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                ((TextView)view.findViewById(R.id.bittrexBackgroundText)).setText("Loading....");
-                swipeRefreshLayout.setRefreshing(true);
-                new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
-                new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
+                onRefesh(view);
             }
         });
 

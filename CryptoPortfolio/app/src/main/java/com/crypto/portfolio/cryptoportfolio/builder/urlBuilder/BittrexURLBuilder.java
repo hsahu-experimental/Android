@@ -7,8 +7,10 @@ public class BittrexURLBuilder {
     private final static String INITIAL_URL = "https://bittrex.com/api/v1.1";
     private final static String ACCOUNT = "/account";
     private final static String MARKET = "/market";
+    private final static String PUBLIC = "/public";
     private final static String GET_BALANCE = "/getbalances";
     private final static String GET_OPEN_ORDER = "/getopenorders";
+    private final static String GET_MARKET_SUMMARY = "/getmarketsummaries";
     private final static String API_KEY_QUERY_PARAM = "apikey";
     private final static String NONCE_QUERY_PARAM = "nonce";
     private final static String QUERY = "?";
@@ -44,6 +46,12 @@ public class BittrexURLBuilder {
                 .append(AND)
                 .append(NONCE_QUERY_PARAM).append(EQUAL).append(nonce);
 
+        return stringBuilder.toString();
+    }
+
+    public static String getMarketSummaryURL() {
+        StringBuilder stringBuilder = new StringBuilder(INITIAL_URL);
+        stringBuilder.append(PUBLIC).append(GET_MARKET_SUMMARY);
         return stringBuilder.toString();
     }
 }

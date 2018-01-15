@@ -16,6 +16,8 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
+                android:id="@+id/btcCard"
+                android:visibility="gone"
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="fill_parent"
@@ -27,38 +29,36 @@
                 card_view:contentPadding="10dp">
 
                 <LinearLayout
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
-                    <!--<TextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="Total Asset Value"-->
-                        <!--android:gravity="center"-->
-                        <!--android:textStyle="bold"-->
-                        <!--android:padding="5dp"-->
-                        <!--android:textSize="18sp" />-->
-
-                    <!--<TextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="1dp"-->
-                        <!--android:text="Holdings"-->
-                        <!--android:background="@android:color/darker_gray" />-->
-
                     <TextView
+                        android:id="@+id/btcValue"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="48.0000657 BTC"
-                        android:gravity="center"
+                        android:text="---"
+                        android:layout_weight="1"
+                        android:gravity="left"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:textSize="20sp" />
 
+                    <TextView
+                        android:id="@+id/usdValue"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="634.56 $"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/holdingsCard"
+                android:visibility="gone"
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="fill_parent"
@@ -89,7 +89,6 @@
                         android:text="Holdings"
                         android:background="@android:color/darker_gray" />
 
-
                     <android.support.v7.widget.RecyclerView
                         android:nestedScrollingEnabled="false"
                         android:id="@+id/bittrexGetAccountBalanceRecyclerView"
@@ -102,6 +101,8 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/openOrderCard"
+                android:visibility="gone"
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="fill_parent"

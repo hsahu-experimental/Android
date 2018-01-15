@@ -1,4 +1,4 @@
-package com.crypto.portfolio.cryptoportfolio.dto.response.bittrex;
+package com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.account;
 
 public class GetBalanceDTO {
 
@@ -6,7 +6,7 @@ public class GetBalanceDTO {
     private Double Balance;
     private Double Available;
     private Double Pending;
-    private String CryptoAddress;
+    private Double currentPrice;
 
     public GetBalanceDTO() {
         super();
@@ -44,12 +44,12 @@ public class GetBalanceDTO {
         Pending = pending;
     }
 
-    public String getCryptoAddress() {
-        return CryptoAddress;
+    public Double getCurrentPrice() {
+        return currentPrice;
     }
 
-    public void setCryptoAddress(String cryptoAddress) {
-        CryptoAddress = cryptoAddress;
+    public void setCurrentPrice(Double currentPrice) {
+        this.currentPrice = currentPrice;
     }
 
     @Override
@@ -59,7 +59,7 @@ public class GetBalanceDTO {
                 ", Balance=" + Balance +
                 ", Available=" + Available +
                 ", Pending=" + Pending +
-                ", CryptoAddress='" + CryptoAddress + '\'' +
+                ", currentPrice=" + currentPrice +
                 '}';
     }
 }
