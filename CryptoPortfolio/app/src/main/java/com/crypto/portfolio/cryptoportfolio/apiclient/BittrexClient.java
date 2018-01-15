@@ -15,14 +15,14 @@ public class BittrexClient {
 
         Map<String, String> headers = getHeaders(apiSecret, url);
 
-        BittrexResponse<GetBalanceDTO> getBalanceDTOBittrexResponse = getDateFromBittrex(url, headers);
+        BittrexResponse<GetBalanceDTO> getBalanceDTOBittrexResponse = getDataFromBittrex(url, headers);
 
         System.out.println(getBalanceDTOBittrexResponse.toString());
 
         return getBalanceDTOBittrexResponse;
     }
 
-    private <T> BittrexResponse<T> getDateFromBittrex(String url, Map<String, String> headers) {
+    private <T> BittrexResponse<T> getDataFromBittrex(String url, Map<String, String> headers) {
 
         HTTPClient httpClient = new HTTPClient();
 
