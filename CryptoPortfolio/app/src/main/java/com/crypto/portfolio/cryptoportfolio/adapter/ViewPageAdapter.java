@@ -13,14 +13,14 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
         super(fragmentManager);
     }
 
-    String[] tabs = {"Binance", "Bittrex"};
+    String[] tabs = {"Bittrex", "Binance"};
 
     @Override
     public Fragment getItem(int position) {
 
         switch (position) {
-            case 0: return new BinanceFragment();
-            case 1: return new BittrexFragment();
+            case 0: return new BittrexFragment();
+            case 1: return new BinanceFragment();
         }
         return null;
     }

@@ -16,6 +16,6 @@
             android:text="BINANCE ACCOUNT INFO"
             android:gravity="center"
             android:textStyle="bold"
-            android:textSize="25sp" />
+            android:textSize="18sp" />
     </android.support.v4.widget.SwipeRefreshLayout>
 </RelativeLayout>

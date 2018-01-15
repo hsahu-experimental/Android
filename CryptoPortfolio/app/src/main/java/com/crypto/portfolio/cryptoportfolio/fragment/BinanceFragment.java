@@ -74,6 +74,14 @@ public class BinanceFragment extends Fragment {
         View view =  inflater.inflate(R.layout.binance_account_info_layout, container, false);
 
         final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.binanceRefresh);
+        swipeRefreshLayout.setRefreshing(true);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getContext(), "binance Data updated", Toast.LENGTH_SHORT).show();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        },3000);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

@@ -2,10 +2,11 @@ package com.crypto.portfolio.cryptoportfolio.fragment;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +15,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crypto.portfolio.cryptoportfolio.R;
+import com.crypto.portfolio.cryptoportfolio.apiclient.BittrexClient;
+import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetAccountBalanceAsyncTask;
+import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetOpenOrderAsyncTask;
 import com.crypto.portfolio.cryptoportfolio.fragmentstate.BittrexState;
 import com.crypto.portfolio.cryptoportfolio.utils.SharedPreferencesUtils;
 
 public class BittrexFragment extends Fragment {
 
     BittrexState bittrexState = new BittrexState();
+    BittrexClient bittrexClient = new BittrexClient();
+
     /**
      * render add bittrex account layout
      * @param inflater
@@ -63,6 +69,15 @@ public class BittrexFragment extends Fragment {
         return view;
     }
 
+
+    RecyclerView mGetAccountBalanceRecyclerView;
+    RecyclerView.LayoutManager mGetAccountBalanceLayoutManager;
+    RecyclerView.Adapter mGetAccountBalanceAdapter;
+
+    RecyclerView mGetOpenOrderRecyclerView;
+    RecyclerView.LayoutManager mGetOpenOrderLayoutManager;
+    RecyclerView.Adapter mGetOpenOrderAdapter;
+
     /**
      * render bittrex account balance layout
      * @param inflater
@@ -70,19 +85,33 @@ public class BittrexFragment extends Fragment {
      * @return
      */
     private View inflateBittrexAccountBalanceFragment(LayoutInflater inflater, ViewGroup container) {
-        View view = inflater.inflate(R.layout.bittrex_account_info_layout, container, false);
+
+        final View view = inflater.inflate(R.layout.bittrex_account_info_layout, container, false);
+
+        mGetAccountBalanceRecyclerView = view.findViewById(R.id.bittrexGetAccountBalanceRecyclerView);
+        mGetAccountBalanceLayoutManager = new LinearLayoutManager(getActivity());
+        mGetAccountBalanceRecyclerView.setLayoutManager(mGetAccountBalanceLayoutManager);
+
+
+        mGetOpenOrderRecyclerView = view.findViewById(R.id.bittrexGetOpenOrderRecyclerView);
+        mGetOpenOrderLayoutManager = new LinearLayoutManager(getActivity());
+        mGetOpenOrderRecyclerView.setLayoutManager(mGetOpenOrderLayoutManager);
 
         final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.bittrexRefresh);
+
+        swipeRefreshLayout.setRefreshing(true);
+
+        new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
+
+        new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
+
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getContext(), "bittrex Data updated", Toast.LENGTH_SHORT).show();
-                        swipeRefreshLayout.setRefreshing(false);
-                    }
-                },3000);
+                ((TextView)view.findViewById(R.id.bittrexBackgroundText)).setText("Loading....");
+                swipeRefreshLayout.setRefreshing(true);
+                new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
+                new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
             }
         });
 

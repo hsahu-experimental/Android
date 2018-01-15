@@ -2,33 +2,44 @@ package com.crypto.portfolio.cryptoportfolio.apiclient;
 
 import com.crypto.portfolio.cryptoportfolio.builder.urlBuilder.BittrexURLBuilder;
 import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.BittrexResponse;
-import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.GetBalanceDTO;
+import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.openorder.OpenOrderResponse;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class BittrexClient {
 
-    public BittrexResponse<GetBalanceDTO> getAccountBalance(String apiKey, String apiSecret) {
+    public BittrexResponse getAccountBalance(String apiKey, String apiSecret) {
 
         String url = BittrexURLBuilder.getAccountBalanceURL(apiKey);
 
         Map<String, String> headers = getHeaders(apiSecret, url);
 
-        BittrexResponse<GetBalanceDTO> getBalanceDTOBittrexResponse = getDataFromBittrex(url, headers);
-
-        System.out.println(getBalanceDTOBittrexResponse.toString());
+        BittrexResponse getBalanceDTOBittrexResponse = getDataFromBittrex(url, headers, BittrexResponse.class);
 
         return getBalanceDTOBittrexResponse;
     }
 
-    private <T> BittrexResponse<T> getDataFromBittrex(String url, Map<String, String> headers) {
+    public OpenOrderResponse getOpenOrders(String apiKey, String apiSecret) {
+
+        String url = BittrexURLBuilder.getOpenOrderURL(apiKey);
+
+        Map<String, String> headers = getHeaders(apiSecret, url);
+
+        OpenOrderResponse openOrderResponse = getDataFromBittrex(url, headers, OpenOrderResponse.class);
+
+        System.out.println(openOrderResponse.toString());
+
+        return openOrderResponse;
+    }
+
+    private <T> T getDataFromBittrex(String url, Map<String, String> headers, Class<T> type) {
 
         HTTPClient httpClient = new HTTPClient();
 
-        BittrexResponse<T> bittrexResponse = httpClient.getResponseBody(url, headers, BittrexResponse.class);
+        T tObject = httpClient.getResponseBody(url, headers, type);
 
-        return bittrexResponse;
+        return tObject;
     }
 
     private Map<String, String> getHeaders(String apiSecret, String url) {
