@@ -98,4 +98,17 @@
     <string name="bittrex_show_account_balance">pref_bittrex_show_holdings</string>
     <string name="bittrex_show_market">pref_bittrex_show_market</string>
     <string name="bittrex_show_open_order">pref_bittrex_show_open_orders</string>
+
+    <!-- slider -->
+    <string name="slide_1_title">Cryptocurrency Portfolio</string>
+    <string name="slide_1_desc">Single portfolio for your bittrex and binance cryptocurrency investments.</string>
+
+    <string name="slide_2_title">Track Open Orders</string>
+    <string name="slide_2_desc">Track your open buy and sell orders from bittrex and binance exchange.</string>
+
+    <string name="slide_3_title">Live Market</string>
+    <string name="slide_3_desc">Track live cryptocurrency market in BTC, USD, ETH and lot more.</string>
+
+    <string name="welcome_preference">"welcome_preference"</string>
+    <string name="welcome_preference_key">"welcome_preference_key"</string>
 </resources>
