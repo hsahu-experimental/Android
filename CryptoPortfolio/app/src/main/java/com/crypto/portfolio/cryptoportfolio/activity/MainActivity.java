@@ -1,6 +1,9 @@
 package com.crypto.portfolio.cryptoportfolio.activity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,9 +15,13 @@ import android.view.MenuItem;
 
 import com.crypto.portfolio.cryptoportfolio.R;
 import com.crypto.portfolio.cryptoportfolio.fragment.TabbedFragment;
+import com.crypto.portfolio.cryptoportfolio.utils.SettingPreferenceUtils;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    Boolean hideAppBar;
+
+    SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +29,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().hide();
+
+        registerOnSharedPreferenceChangeListener();
 
         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         TabbedFragment tabbedFragment = new TabbedFragment();
@@ -36,6 +44,45 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    private void toggleAppBarVisibility() {
+        if (hideAppBar) {
+            getSupportActionBar().hide();
+        } else {
+            getSupportActionBar().show();
+        }
+    }
+
+    private void registerOnSharedPreferenceChangeListener() {
+
+        final String hideAppBarKey = getString(R.string.hide_appbar_key);
+        hideAppBar = SettingPreferenceUtils.getBoolean(hideAppBarKey, this);
+        toggleAppBarVisibility();
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        onSharedPreferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
+            @Override
+            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+                if (key.equals(hideAppBarKey)) {
+                    hideAppBar = !hideAppBar;
+                    toggleAppBarVisibility();
+                }
+            }
+        };
+        prefs.registerOnSharedPreferenceChangeListener(onSharedPreferenceChangeListener);
+    }
+
+    private void unregisterOnSharedPreferenceChangeListener() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        prefs.unregisterOnSharedPreferenceChangeListener(onSharedPreferenceChangeListener);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterOnSharedPreferenceChangeListener();
+
     }
 
     @Override
@@ -57,16 +104,10 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -75,23 +116,22 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        if (id == R.id.nav_setting) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            drawer.closeDrawer(GravityCompat.START);
+            startActivity(intent);
+        } else if (id == R.id.nav_help) {
+            Intent intent = new Intent(this, HelpActivity.class);
+            drawer.closeDrawer(GravityCompat.START);
+            startActivity(intent);
+        } else if (id == R.id.nav_about) {
+            Intent intent = new Intent(this, AboutActivity.class);
+            drawer.closeDrawer(GravityCompat.START);
+            startActivity(intent);
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }

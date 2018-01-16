@@ -1,7 +1,10 @@
 package com.crypto.portfolio.cryptoportfolio.fragment;
 
 import android.app.AlertDialog;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -19,12 +22,33 @@ import com.crypto.portfolio.cryptoportfolio.apiclient.BittrexClient;
 import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetAccountBalanceAsyncTask;
 import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetOpenOrderAsyncTask;
 import com.crypto.portfolio.cryptoportfolio.fragmentstate.BittrexState;
+import com.crypto.portfolio.cryptoportfolio.utils.SettingPreferenceUtils;
 import com.crypto.portfolio.cryptoportfolio.utils.SharedPreferencesUtils;
 
 public class BittrexFragment extends Fragment {
 
+    // bittrex data state
     BittrexState bittrexState = new BittrexState();
+
+    // bittrex api client
     BittrexClient bittrexClient = new BittrexClient();
+
+    // shared preference change listener
+    SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener;
+
+    Boolean showHoldings;
+    Boolean showMarket;
+    Boolean showOpenOrders;
+
+
+    RecyclerView mGetAccountBalanceRecyclerView;
+    RecyclerView.LayoutManager mGetAccountBalanceLayoutManager;
+    RecyclerView.Adapter mGetAccountBalanceAdapter;
+
+    RecyclerView mGetOpenOrderRecyclerView;
+    RecyclerView.LayoutManager mGetOpenOrderLayoutManager;
+    RecyclerView.Adapter mGetOpenOrderAdapter;
+    SwipeRefreshLayout swipeRefreshLayout;
 
     /**
      * render add bittrex account layout
@@ -69,20 +93,15 @@ public class BittrexFragment extends Fragment {
         return view;
     }
 
-
-    RecyclerView mGetAccountBalanceRecyclerView;
-    RecyclerView.LayoutManager mGetAccountBalanceLayoutManager;
-    RecyclerView.Adapter mGetAccountBalanceAdapter;
-
-    RecyclerView mGetOpenOrderRecyclerView;
-    RecyclerView.LayoutManager mGetOpenOrderLayoutManager;
-    RecyclerView.Adapter mGetOpenOrderAdapter;
-    SwipeRefreshLayout swipeRefreshLayout;
-
+    /**
+     * swipe refresh layout on refresh action
+     * @param view
+     */
     private void onRefesh(View view){
         swipeRefreshLayout.setRefreshing(true);
-        new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
-        new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
+        callGetAccountBalance(view);
+        toggleOpenOrderCardViewVisibility(view);
+        toggleAccountBalanceCardVisibility(view);
     }
 
     /**
@@ -94,6 +113,8 @@ public class BittrexFragment extends Fragment {
     private View inflateBittrexAccountBalanceFragment(LayoutInflater inflater, ViewGroup container) {
 
         final View view = inflater.inflate(R.layout.bittrex_account_info_layout, container, false);
+
+        registerOnSharedPreferenceChangeListener(view);
 
         mGetAccountBalanceRecyclerView = view.findViewById(R.id.bittrexGetAccountBalanceRecyclerView);
         mGetAccountBalanceLayoutManager = new LinearLayoutManager(getActivity());
@@ -113,6 +134,94 @@ public class BittrexFragment extends Fragment {
         });
 
         return view;
+    }
+
+    /**
+     * unlisten shared preference change on destroy activity
+     */
+    private void unregisterOnSharedPreferenceChangeListener() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        prefs.unregisterOnSharedPreferenceChangeListener(onSharedPreferenceChangeListener);
+    }
+
+    /**
+     * show hide open order card view
+     * @param view
+     */
+    private void toggleOpenOrderCardViewVisibility(final View view) {
+        if (showOpenOrders) {
+            new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
+            view.findViewById(R.id.openOrderCard).setVisibility(View.VISIBLE);
+        } else {
+            view.findViewById(R.id.openOrderCard).setVisibility(View.GONE);
+        }
+    }
+
+    /**
+     * show or hide account balance card view
+     * @param view
+     */
+    private void toggleAccountBalanceCardVisibility(View view) {
+        if (showHoldings) {
+            view.findViewById(R.id.holdingsCard).setVisibility(View.VISIBLE);
+        } else {
+            view.findViewById(R.id.holdingsCard).setVisibility(View.GONE);
+        }
+    }
+
+    /**
+     * hit get account balance API on page refresh only
+     * @param view
+     */
+    private void callGetAccountBalance(final View view) {
+        new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
+    }
+
+    /**
+     * shared preference change listener
+     * @param view
+     */
+    private void registerOnSharedPreferenceChangeListener(final View view) {
+
+        final String showAccountBalanceKey = getString(R.string.bittrex_show_account_balance);
+        final String showMarketKey = getString(R.string.bittrex_show_market);
+        final String showOpenOrderKey = getString(R.string.bittrex_show_open_order);
+
+        Context context = getContext();
+
+        showHoldings = SettingPreferenceUtils.getBoolean(showAccountBalanceKey, context);
+        showMarket = SettingPreferenceUtils.getBoolean(showMarketKey, context);
+        showOpenOrders = SettingPreferenceUtils.getBoolean(showOpenOrderKey, context);
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        onSharedPreferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener()
+        {
+            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key)
+            {
+                if (key.equals(showAccountBalanceKey)) {
+                    showHoldings = !showHoldings;
+                    toggleAccountBalanceCardVisibility(view);
+                }
+                if (key.equals(showOpenOrderKey)) {
+                    showOpenOrders = !showOpenOrders;
+                    toggleOpenOrderCardViewVisibility(view);
+                }
+                if (key.equals(showMarketKey)) {
+                    showMarket = !showMarket;
+                    // TODO
+                }
+            }
+        };
+        prefs.registerOnSharedPreferenceChangeListener(onSharedPreferenceChangeListener);
+    }
+
+    /**
+     * on destroy activity lifecycle
+     */
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        unregisterOnSharedPreferenceChangeListener();
     }
 
     @Override

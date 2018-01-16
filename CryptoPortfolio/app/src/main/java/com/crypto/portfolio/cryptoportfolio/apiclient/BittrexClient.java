@@ -45,8 +45,6 @@ public class BittrexClient {
 
         OpenOrderResponse openOrderResponse = getDataFromBittrex(url, headers, OpenOrderResponse.class);
 
-        System.out.println(openOrderResponse.toString());
-
         return openOrderResponse;
     }
 

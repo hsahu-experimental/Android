@@ -53,7 +53,6 @@ public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Acc
         ((SwipeRefreshLayout)view.findViewById(R.id.bittrexRefresh)).setRefreshing(false);
         mAdapter = new AccountBalanceRecyclerViewAdapter(bittrexState.getGetBalanceDTO());
         mRecyclerView.setAdapter(mAdapter);
-        view.findViewById(R.id.holdingsCard).setVisibility(View.VISIBLE);
         view.findViewById(R.id.btcCard).setVisibility(View.VISIBLE);
     }
 }
