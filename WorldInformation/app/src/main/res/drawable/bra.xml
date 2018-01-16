@@ -1,0 +1,3750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="4200dp"
+    android:height="2940dp"
+    android:viewportWidth="4200"
+    android:viewportHeight="2940">
+
+    <path
+        android:fillColor="#009b3a"
+        android:pathData="M -50 -50 H 50 V 50 H -50 V -50 Z" />
+    <path
+        android:fillColor="#fedf00"
+        android:pathData="M -1743,0 0,1113 1743,0 0,-1113 z" />
+    <path
+        android:fillColor="#002776"
+        android:pathData="M 0 -735 C 405.929291126 -735 735 -405.929291126 735 0 C 735 405.929291126 405.929291126 735 0 735 C -405.929291126 735 -735 405.929291126 -735 0 C -735 -405.929291126 -405.929291126 -735 0 -735 Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M -2205,1470 a 1785 1785 0 0 1 3570,0 h -105 a 1680 1680 0 1 0 -3360,0 z" />
+    <group
+            android:translateX="-420"
+            android:translateY="1470">
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <group>
+            <path
+                android:fillColor="#009b3a"
+                android:fillType="evenOdd"
+                android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32" />
+        </group>
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M -31.5,0 h 33 a 30 30 0 0 0 30,-30 v -10 a 30 30 0 0 0 -30,-30 H -31.5 z M
+-18.5,-13 h 19 a 19 19 0 0 0 19,-19 v -6 a 19 19 0 0 0 -19,-19 H -18.5 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:pathData="M 0,0 h 63 v -13 H 12 v -18 h 40 v -12 h -40 v -14 H 60 v -13 H 0 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:pathData="M -31.5,0 h 12 v -48 l 14,48 h 11 l 14,-48 V 0 h 12 V -70 h -17.5 l -14,48 l
+-14,-48 H -31.5 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:pathData="M -26.25,0 h 52.5 v -12 h -40.5 v -16 h 33 v -12 h -33 v -11 H 25 v -12 H -26.25
+z" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+        <group>
+            <path
+                android:fillColor="#009b3a"
+                android:fillType="evenOdd"
+                android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#009b3a"
+                android:fillType="evenOdd"
+                android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32" />
+        </group>
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <group>
+            <path
+                android:fillColor="#009b3a"
+                android:fillType="evenOdd"
+                android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 5 -35 H 31.5 V -25 H 5 V -35 Z" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 21.5 -35 H 31.5 V 0 H 21.5 V -35 Z" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#009b3a"
+                android:fillType="evenOdd"
+                android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#009b3a"
+                android:fillType="evenOdd"
+                android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#009b3a"
+                android:fillType="evenOdd"
+                android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#009b3a"
+                android:fillType="evenOdd"
+                android:pathData="M -31.5,0 h 13 v -26 h 28 a 22 22 0 0 0 0,-44 h -40 z M -18.5,-39 h 27 a 9 9 0 0
+0 0,-18 h -27 z" />
+            <path
+                android:fillColor="#009b3a"
+                android:pathData="M 28,0 c 0,-10 0,-32 -15,-32 h -19 c 22,0 22,22 22,32" />
+        </group>
+        <path
+            android:fillColor="#009b3a"
+            android:pathData="M 0,0 h 63 v -13 H 12 v -18 h 40 v -12 h -40 v -14 H 60 v -13 H 0 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:pathData="M 0,0 h 63 v -13 H 12 v -18 h 40 v -12 h -40 v -14 H 60 v -13 H 0 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:pathData="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25
+C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66
+28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59
+-14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5
+13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:pathData="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25
+C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66
+28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59
+-14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5
+13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:pathData="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25
+C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66
+28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59
+-14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5
+13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 z" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+        <path
+            android:fillColor="#009b3a"
+            android:fillType="evenOdd"
+            android:pathData="M 0,0 a 31.5 35 0 0 0 0,-70 a 31.5 35 0 0 0 0,70 M 0,-13 a 18.5 22 0 0 0 0,-44 a
+18.5 22 0 0 0 0,44" />
+    </group>
+    <group
+            android:scaleX="31.5"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="31.5"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="15"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="31.5"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="31.5"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="31.5"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="15"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="26.25"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="21"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="31.5"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+    <group
+            android:scaleX="10.5"
+            android:scaleY="0">
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <path
+            android:fillColor="#fff"
+            android:pathData="M 0,-1 v 1 h .5" />
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+        <group>
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+            <path
+                android:fillColor="#fff"
+                android:pathData="M 0,-1 v 1 h .5" />
+        </group>
+    </group>
+</vector>

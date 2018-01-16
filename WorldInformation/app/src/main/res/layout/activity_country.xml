@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.hsahu.worldinformation.CountryActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#eeeeee"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/countryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World Country"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/countryNativeName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hello World"
+                            android:textAlignment="viewStart" />
+
+                        <TextView
+                            android:id="@+id/capitalName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/countryCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/countryFlag"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:scaleType="fitXY"/>
+                </RelativeLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="3"
+                            android:padding="3dip"
+                            android:text="Population" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:id="@+id/population"
+                            android:layout_weight="1"
+                            android:padding="3dip" />
+
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="3"
+                            android:padding="3dip"
+                            android:text="Demoynm" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:id="@+id/demonym"
+                            android:layout_weight="1"
+                            android:padding="3dip" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="3"
+                            android:padding="3dip"
+                            android:text="Area" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:id="@+id/area"
+                            android:layout_weight="1"
+                            android:padding="3dip" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="3"
+                            android:padding="3dip"
+                            android:text="Gini Index" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:id="@+id/gini"
+                            android:layout_weight="1"
+                            android:padding="3dip" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/otherNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_below="@id/headerLayout"
+            android:background="#eeeeee"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:text="Other Names (Translation)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/darker_gray"/>
+
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/deTranslation"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:padding="3dip"/>
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="German" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/esTranslation"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:padding="3dip" />
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="3dip"
+                            android:text="Spanish" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/frTranslation"
+                            android:ellipsize="end"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:padding="3dip" />
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="3dip"
+                            android:text="French" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/jaTranslation"
+                            android:ellipsize="end"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:padding="3dip" />
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Japanese" />
+                    </TableRow>
+
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/itTranslation"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:padding="3dip" />
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Italian" />
+                    </TableRow>
+
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/ptTranslation"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:padding="3dip" />
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Portuguese" />
+                    </TableRow>
+
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/nlTranslation"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:padding="3dip" />
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="3dip"
+                            android:text="Dutch" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/hrTranslation"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="3dip" />
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Croatian" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:textAlignment="viewStart"
+                            android:id="@+id/faTranslation"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="3dip" />
+                        <TextView
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="3dip"
+                            android:text="Farsi" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_below="@id/otherNames"
+            android:background="#eeeeee"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:text="Borders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:text="India (IND)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="pakistan (PAK)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Iraq (IRQ)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Sri Lanka (SLK)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/currencyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#eeeeee"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:text="Currencies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:text="Bangladeshi taka (BDT) (৳)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/blocLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currencyLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#eeeeee"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:text="Regional Blocks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:text="South Asian Association for Regional Cooperation (SAARC)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/languagesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blocLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#eeeeee"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:text="Languages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:text="Belarusian (беларуская мова)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Russian (Русский)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/regionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/languagesLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#eeeeee"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:text="Region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:text="Asia (Southern Asia)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/timezoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regionLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#eeeeee"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:text="Timezones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:text="UTC+12:00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="UTC+13:00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="UTC+14:00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
