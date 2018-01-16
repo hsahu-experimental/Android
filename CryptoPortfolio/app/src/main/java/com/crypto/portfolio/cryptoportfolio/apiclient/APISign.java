@@ -8,20 +8,21 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class APISign {
 
-    private static final String ENCRYPION = "HmacSHA512";
+    public static final String HMACSHA212 = "HmacSHA512";
+    public static final String HMACSHA256 = "HmacSHA256";
     private final static char[] hexArray = "0123456789ABCDEF".toCharArray();
 
-    public static String sign(String secret, String url) {
+    public static String sign(String secret, String url, String algorithm) {
 
         Mac shaHmac = null;
 
         try {
-            shaHmac = Mac.getInstance(ENCRYPION);
+            shaHmac = Mac.getInstance(algorithm);
         } catch (NoSuchAlgorithmException nsae) {
             nsae.printStackTrace();
         }
 
-        SecretKeySpec secretKey = new SecretKeySpec(secret.getBytes(), ENCRYPION);
+        SecretKeySpec secretKey = new SecretKeySpec(secret.getBytes(), algorithm);
 
         try {
             shaHmac.init(secretKey);
