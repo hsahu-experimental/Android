@@ -7,21 +7,21 @@
             android:defaultValue="false"
             android:key="pref_general_hide_appbar"
             android:title="Hide App Bar"
-            android:summary="Hide App Bar (recommended)" />
+            android:summary="for maximum visibilty (recommended)" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="Bittrex Settings"
         android:key="pref_bittrex_storage_settings">
         <SwitchPreference
             android:defaultValue="true"
+            android:key="pref_bittrex_show_holdings"
+            android:title="Show Account Balance"/>
+        <SwitchPreference
+            android:defaultValue="true"
             android:key="pref_bittrex_show_open_orders"
             android:title="Show Open Orders" />
         <SwitchPreference
-            android:defaultValue="true"
-            android:key="pref_bittrex_show_holdings"
-            android:title="Show Holdings"/>
-        <SwitchPreference
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="pref_bittrex_show_market"
             android:title="Show Market"/>
         <PreferenceScreen
@@ -45,12 +45,12 @@
         android:key="pref_binance_storage_settings">
         <SwitchPreference
             android:defaultValue="true"
-            android:key="pref_binance_show_open_orders"
-            android:title="Show Open Orders" />
+            android:key="pref_binance_show_holdings"
+            android:title="Show Account Balance"/>
         <SwitchPreference
             android:defaultValue="true"
-            android:key="pref_binance_show_holdings"
-            android:title="Show Holdings"/>
+            android:key="pref_binance_show_open_orders"
+            android:title="Show Open Orders" />
         <SwitchPreference
             android:defaultValue="false"
             android:key="pref_binance_show_market"
