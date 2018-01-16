@@ -3,8 +3,10 @@ package com.crypto.portfolio.cryptoportfolio.apiclient;
 
 import com.crypto.portfolio.cryptoportfolio.builder.urlBuilder.BinanceURLBuilder;
 import com.crypto.portfolio.cryptoportfolio.dto.response.binance.GetAccountBalanceResponse;
+import com.crypto.portfolio.cryptoportfolio.dto.response.binance.OpenOrderDTO;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class BinanceClient {
@@ -16,6 +18,21 @@ public class BinanceClient {
         T tObject = httpClient.getResponseBody(url, headers, type);
 
         return tObject;
+    }
+
+    public List<OpenOrderDTO> getOpenOrders(String apiKey, String apiSecret) {
+
+        String binanceURL = BinanceURLBuilder.getOpenOrderURL(apiSecret);
+
+        System.out.println(binanceURL);
+
+        Map<String, String> headers = getHeaders(apiKey);
+
+        List<OpenOrderDTO> openOrderDTOS =  getDataFromBinance(binanceURL, headers, List.class);
+
+        System.out.println(openOrderDTOS.toString());
+
+        return openOrderDTOS;
     }
 
     public GetAccountBalanceResponse getAccountBalance(String apiKey, String apiSecret) {

@@ -9,6 +9,7 @@ public class BinanceURLBuilder {
     private final static String VERSION_V2 = "/v2";
     private final static String VERSION_V3 = "/v3";
     private final static String ACCOUNT = "/account";
+    private final static String OPEN_ORDER = "/allOrders";
     private final static String QUERY = "?";
     private final static String AND = "&";
     private final static String EQUAL = "=";
@@ -28,6 +29,21 @@ public class BinanceURLBuilder {
         String queryParam = TIMESTAMP + EQUAL + timestamp;
 
         String binanceURL = INITIAL_URL + VERSION_V3 + ACCOUNT + QUERY + queryParam;
+
+        String signature = APISign.sign(apiSecret, queryParam, APISign.HMACSHA256);
+
+        binanceURL = appendSignatureToURL(binanceURL, signature);
+
+        return  binanceURL;
+    }
+
+    public static String getOpenOrderURL(String apiSecret) {
+
+        String timestamp = APISign.generateNonce();
+
+        String queryParam = TIMESTAMP + EQUAL + timestamp;
+
+        String binanceURL = INITIAL_URL + VERSION_V3 + OPEN_ORDER + QUERY + queryParam;
 
         String signature = APISign.sign(apiSecret, queryParam, APISign.HMACSHA256);
 

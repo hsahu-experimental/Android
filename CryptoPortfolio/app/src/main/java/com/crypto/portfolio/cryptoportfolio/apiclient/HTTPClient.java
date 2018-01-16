@@ -32,6 +32,8 @@ public class HTTPClient {
             // get the response body as string from input stream
             String responseBody = readDataFromInputStream(httpURLConnection);
 
+            System.out.println(responseBody);
+
             // convert to java object
             Gson gson = new Gson();
             tObject = gson.fromJson(responseBody, type);
