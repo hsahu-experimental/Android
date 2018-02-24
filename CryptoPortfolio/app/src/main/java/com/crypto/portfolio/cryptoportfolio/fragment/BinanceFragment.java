@@ -14,12 +14,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crypto.portfolio.cryptoportfolio.R;
+import com.crypto.portfolio.cryptoportfolio.apiclient.BinanceClient;
+import com.crypto.portfolio.cryptoportfolio.asynctask.binance.BinanceGetAccountBalanceAsyncTask;
 import com.crypto.portfolio.cryptoportfolio.fragmentstate.BinanceState;
 import com.crypto.portfolio.cryptoportfolio.utils.SharedPreferencesUtils;
 
 public class BinanceFragment extends Fragment {
 
     BinanceState binanceState = new BinanceState();
+    BinanceClient binanceClient = new BinanceClient();
+
+    SwipeRefreshLayout swipeRefreshLayout;
 
     /**
      * render add binance account layout
@@ -49,7 +54,7 @@ public class BinanceFragment extends Fragment {
                         EditText binance_secret = mView.findViewById(R.id.binance_secret);
                         binanceState.setBinanceKey(binance_key.getText().toString());
                         binanceState.setBinanceSecret(binance_secret.getText().toString());
-                        SharedPreferencesUtils.setBinancePreference(binanceState.getBinanceKey() , binanceState.getBinanceKey());
+                        SharedPreferencesUtils.setBinancePreference(binanceState.getBinanceKey() , binanceState.getBinanceSecret());
                         Toast.makeText(getContext(), "Binance key added", Toast.LENGTH_SHORT).show();
                         dialog.dismiss();
                         fab.setVisibility(View.GONE);
@@ -63,6 +68,10 @@ public class BinanceFragment extends Fragment {
         return view;
     }
 
+    private void onRefesh(View view) {
+        swipeRefreshLayout.setRefreshing(true);
+        new BinanceGetAccountBalanceAsyncTask(view, binanceClient, binanceState).execute();
+    }
     /**
      * render binance account balance layout
      * @param inflater
@@ -71,27 +80,16 @@ public class BinanceFragment extends Fragment {
      */
     private View inflateBinanceAccountBalanceFragment(LayoutInflater inflater, ViewGroup container) {
 
-        View view =  inflater.inflate(R.layout.binance_account_info_layout, container, false);
+        final View view = inflater.inflate(R.layout.binance_account_info_layout, container, false);
 
-        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.binanceRefresh);
-        swipeRefreshLayout.setRefreshing(true);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Toast.makeText(getContext(), "binance Data updated", Toast.LENGTH_SHORT).show();
-                swipeRefreshLayout.setRefreshing(false);
-            }
-        },3000);
+        swipeRefreshLayout = view.findViewById(R.id.binanceRefresh);
+
+        onRefesh(view);
+
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getContext(), "binance Data updated", Toast.LENGTH_SHORT).show();
-                        swipeRefreshLayout.setRefreshing(false);
-                    }
-                },3000);
+                onRefesh(view);
             }
         });
         return view;

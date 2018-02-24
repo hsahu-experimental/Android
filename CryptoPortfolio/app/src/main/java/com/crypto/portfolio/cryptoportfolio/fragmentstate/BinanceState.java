@@ -2,11 +2,13 @@ package com.crypto.portfolio.cryptoportfolio.fragmentstate;
 
 import com.crypto.portfolio.cryptoportfolio.dto.response.binance.GetBalanceDTO;
 
+import java.util.List;
+
 public class BinanceState {
 
     private String binanceKey;
     private String binanceSecret;
-    private GetBalanceDTO getBalanceDTO;
+    private List<GetBalanceDTO> balanceDTOList;
 
     public BinanceState() {
         super();
@@ -28,12 +30,12 @@ public class BinanceState {
         this.binanceSecret = binanceSecret;
     }
 
-    public GetBalanceDTO getGetBalanceDTO() {
-        return getBalanceDTO;
+    public List<GetBalanceDTO> getBalanceDTOList() {
+        return balanceDTOList;
     }
 
-    public void setGetBalanceDTO(GetBalanceDTO getBalanceDTO) {
-        this.getBalanceDTO = getBalanceDTO;
+    public void setBalanceDTOList(List<GetBalanceDTO> balanceDTOList) {
+        this.balanceDTOList = balanceDTOList;
     }
 
     @Override
@@ -41,7 +43,7 @@ public class BinanceState {
         return "BinanceState{" +
                 "binanceKey='" + binanceKey + '\'' +
                 ", binanceSecret='" + binanceSecret + '\'' +
-                ", getBalanceDTO=" + getBalanceDTO +
+                ", balanceDTOList=" + balanceDTOList +
                 '}';
     }
 }

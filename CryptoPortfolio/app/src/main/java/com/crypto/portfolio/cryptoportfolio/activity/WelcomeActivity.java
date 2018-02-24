@@ -104,7 +104,6 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void loadNextSlider() {
-        System.out.println("------TTT-----");
         int nextSlider =  mViewPager.getCurrentItem() + 1;
         if (nextSlider < mPagerAdapter.getCount()) {
             mViewPager.setCurrentItem(nextSlider);

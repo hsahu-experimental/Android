@@ -61,7 +61,7 @@ public class BittrexClient {
 
         Map<String, String> headers = new HashMap<>();
 
-        String sign = APISign.sign(apiSecret, url);
+        String sign = APISign.sign(apiSecret, url, APISign.HMACSHA212);
 
         headers.put("apiSign", sign);
 
