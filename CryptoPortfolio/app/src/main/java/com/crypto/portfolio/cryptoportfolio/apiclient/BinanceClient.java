@@ -2,9 +2,16 @@ package com.crypto.portfolio.cryptoportfolio.apiclient;
 
 
 import com.crypto.portfolio.cryptoportfolio.builder.urlBuilder.BinanceURLBuilder;
+import com.crypto.portfolio.cryptoportfolio.dto.response.binance.BinanceMarket;
 import com.crypto.portfolio.cryptoportfolio.dto.response.binance.GetAccountBalanceResponse;
 import com.crypto.portfolio.cryptoportfolio.dto.response.binance.OpenOrderDTO;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,6 +40,21 @@ public class BinanceClient {
         System.out.println(openOrderDTOS.toString());
 
         return openOrderDTOS;
+    }
+
+    public List<BinanceMarket> getMarket() {
+
+        List<BinanceMarket> market = new ArrayList<>();
+
+        String binanceURL = BinanceURLBuilder.getMarketURL();
+
+        BinanceMarket[] binanceMarketArray =  getDataFromBinance(binanceURL, null, BinanceMarket[].class);
+
+        Collections.addAll(market, binanceMarketArray);
+
+        System.out.println(market.toString());
+
+        return market;
     }
 
     public GetAccountBalanceResponse getAccountBalance(String apiKey, String apiSecret) {

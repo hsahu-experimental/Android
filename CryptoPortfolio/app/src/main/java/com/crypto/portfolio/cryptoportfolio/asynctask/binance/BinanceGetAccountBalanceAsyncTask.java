@@ -24,6 +24,7 @@ public class BinanceGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Get
 
     @Override
     protected GetAccountBalanceResponse doInBackground(Void... voids) {
+        binanceClient.getMarket();
         return binanceClient.getAccountBalance(binanceState.getBinanceKey(), binanceState.getBinanceSecret());
     }
 

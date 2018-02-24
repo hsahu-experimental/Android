@@ -10,6 +10,7 @@ public class BinanceURLBuilder {
     private final static String VERSION_V3 = "/v3";
     private final static String ACCOUNT = "/account";
     private final static String OPEN_ORDER = "/allOrders";
+    private final static String MARKET = "/ticker/allPrices";
     private final static String QUERY = "?";
     private final static String AND = "&";
     private final static String EQUAL = "=";
@@ -20,6 +21,11 @@ public class BinanceURLBuilder {
     private static String appendSignatureToURL(String binanceURL, String signature) {
 
         return binanceURL + AND + SUGNATURE + EQUAL + signature;
+    }
+
+    public static String getMarketURL() {
+
+        return INITIAL_URL + VERSION_V1 + MARKET;
     }
 
     public static String getAccountBalanceURL(String apiSecret) {
