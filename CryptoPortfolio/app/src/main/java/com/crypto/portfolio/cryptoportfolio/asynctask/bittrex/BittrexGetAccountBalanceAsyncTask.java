@@ -1,6 +1,8 @@
 package com.crypto.portfolio.cryptoportfolio.asynctask.bittrex;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
@@ -50,6 +52,39 @@ public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Acc
         return accountBalanceResponse;
     }
 
+    private void showNoInternetConnectionAlertBox() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder
+                .setTitle("No Internet Connection")
+                .setMessage("It looks like your internet connection is off. Please turn it on and try again.")
+                .setIcon(R.drawable.ic_no_internet_connection)
+                .setCancelable(true)
+                .setNegativeButton("Retry", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                        new BittrexGetAccountBalanceAsyncTask(context, view, bittrexClient, bittrexState, mRecyclerView, mAdapter).execute();
+                    }
+                });
+        builder.create().show();
+    }
+
+    private void showInvalidKeyOrSecretAlertBox() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder
+                .setTitle("Invalid API key or secret")
+                .setMessage("Please use correct api key and secret. Setting > Bittrex api key.")
+                .setIcon(R.drawable.ic_invalid_key)
+                .setCancelable(true)
+                .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+        builder.create().show();
+    }
+
     @Override
     protected void onPostExecute(AccountBalanceResponse accountBalanceResponse) {
         super.onPostExecute(accountBalanceResponse);
@@ -65,8 +100,12 @@ public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Acc
             view.findViewById(R.id.btcCard).setVisibility(View.VISIBLE);
         } else  {
             ((SwipeRefreshLayout)view.findViewById(R.id.bittrexRefresh)).setRefreshing(false);
-            Toast.makeText(this.context, accountBalanceResponse.getApiError().getClientMessage(), Toast.LENGTH_LONG).show();
-        }
 
+            if (accountBalanceResponse.getApiError().getDiagnosticMessage().equals("NO_INTERNET_CONNECTION")) {
+                showNoInternetConnectionAlertBox();
+            } else {
+                showInvalidKeyOrSecretAlertBox();
+            }
+        }
     }
 }

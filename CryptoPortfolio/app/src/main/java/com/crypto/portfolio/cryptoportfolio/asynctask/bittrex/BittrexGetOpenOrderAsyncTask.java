@@ -31,15 +31,20 @@ public class BittrexGetOpenOrderAsyncTask extends AsyncTask<Void, Void, OpenOrde
     protected OpenOrderResponse doInBackground(Void... voids) {
         OpenOrderResponse openOrderResponse = bittrexClient
                 .getOpenOrders(bittrexState.getBittrexKey(), bittrexState.getBittrexSecret());
-        bittrexState.setOpenOrderDTO(openOrderResponse.getResult());
+
+        if (openOrderResponse.getSuccess()) {
+            bittrexState.setOpenOrderDTO(openOrderResponse.getResult());
+        }
         return openOrderResponse;
     }
 
     @Override
     protected void onPostExecute(OpenOrderResponse openOrderResponse) {
         super.onPostExecute(openOrderResponse);
-        ((SwipeRefreshLayout)view.findViewById(R.id.bittrexRefresh)).setRefreshing(false);
-        mAdapter = new OpenOrderRecyclerViewAdapter(bittrexState.getOpenOrderDTO());
-        mRecyclerView.setAdapter(mAdapter);
+        if (openOrderResponse.getSuccess()) {
+            ((SwipeRefreshLayout)view.findViewById(R.id.bittrexRefresh)).setRefreshing(false);
+            mAdapter = new OpenOrderRecyclerViewAdapter(bittrexState.getOpenOrderDTO());
+            mRecyclerView.setAdapter(mAdapter);
+        }
     }
 }

@@ -60,6 +60,20 @@ public class BittrexClient {
 
         OpenOrderResponse openOrderResponse = getDataFromBittrex(url, headers, OpenOrderResponse.class);
 
+        if (openOrderResponse == null) {
+            openOrderResponse = new OpenOrderResponse();
+            String diagnosticMessage = "NO_INTERNET_CONNECTION";
+            openOrderResponse.setMessage(diagnosticMessage);
+            openOrderResponse.setSuccess(Boolean.FALSE);
+            ApiError apiError = new ApiError("No internet connection", diagnosticMessage);
+            openOrderResponse.setApiError(apiError);
+        } else {
+            if (openOrderResponse.getMessage().equals("INVALID_SIGNATURE")) {
+                ApiError apiError = new ApiError("Bittrex API key or secret is invalid", openOrderResponse.getMessage());
+                openOrderResponse.setApiError(apiError);
+            }
+        }
+
         return openOrderResponse;
     }
 
