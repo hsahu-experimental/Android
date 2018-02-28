@@ -111,8 +111,55 @@
                         android:text="Holdings"
                         android:background="@android:color/darker_gray" />
 
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:text="Coin"
+                            android:textSize="17dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_weight="3"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="17dp"
+                            android:text="Holdings"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textStyle="bold"
+                            android:gravity="left"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="17dp"
+                            android:text="Current Price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textStyle="bold"
+                            android:gravity="end"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:text="Holdings"
+                        android:background="@android:color/darker_gray" />
+
                     <android.support.v7.widget.RecyclerView
-                        android:padding="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
                         android:nestedScrollingEnabled="false"
                         android:id="@+id/bittrexGetAccountBalanceRecyclerView"
                         android:layout_width="match_parent"
