@@ -28,7 +28,7 @@ public class BittrexClient {
             ApiError apiError = new ApiError("No internet connection", diagnosticMessage);
             bittrexResponse.setApiError(apiError);
         } else {
-            if (bittrexResponse.getMessage().equals("INVALID_SIGNATURE")) {
+            if (bittrexResponse.getMessage().equals("INVALID_SIGNATURE") || bittrexResponse.getMessage().equals("APIKEY_INVALID")) {
                 ApiError apiError = new ApiError("Bittrex API key or secret is invalid", bittrexResponse.getMessage());
                 bittrexResponse.setApiError(apiError);
             }
@@ -68,7 +68,7 @@ public class BittrexClient {
             ApiError apiError = new ApiError("No internet connection", diagnosticMessage);
             openOrderResponse.setApiError(apiError);
         } else {
-            if (openOrderResponse.getMessage().equals("INVALID_SIGNATURE")) {
+            if (openOrderResponse.getMessage().equals("INVALID_SIGNATURE") || openOrderResponse.getMessage().equals("APIKEY_INVALID")) {
                 ApiError apiError = new ApiError("Bittrex API key or secret is invalid", openOrderResponse.getMessage());
                 openOrderResponse.setApiError(apiError);
             }
