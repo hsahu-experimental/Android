@@ -31,13 +31,9 @@ public class BinanceClient {
 
         String binanceURL = BinanceURLBuilder.getOpenOrderURL(apiSecret);
 
-        System.out.println(binanceURL);
-
         Map<String, String> headers = getHeaders(apiKey);
 
         List<OpenOrderDTO> openOrderDTOS =  getDataFromBinance(binanceURL, headers, List.class);
-
-        System.out.println(openOrderDTOS.toString());
 
         return openOrderDTOS;
     }
@@ -51,8 +47,6 @@ public class BinanceClient {
         BinanceMarket[] binanceMarketArray =  getDataFromBinance(binanceURL, null, BinanceMarket[].class);
 
         Collections.addAll(market, binanceMarketArray);
-
-        System.out.println(market.toString());
 
         return market;
     }

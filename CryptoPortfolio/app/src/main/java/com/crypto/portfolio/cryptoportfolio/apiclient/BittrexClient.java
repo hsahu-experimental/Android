@@ -1,6 +1,7 @@
 package com.crypto.portfolio.cryptoportfolio.apiclient;
 
 import com.crypto.portfolio.cryptoportfolio.builder.urlBuilder.BittrexURLBuilder;
+import com.crypto.portfolio.cryptoportfolio.dto.ApiError;
 import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.account.AccountBalanceResponse;
 import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.market.MarketSummaryDTO;
 import com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.market.MarketSummaryResponse;
@@ -17,9 +18,23 @@ public class BittrexClient {
 
         Map<String, String> headers = getHeaders(apiSecret, url);
 
-        AccountBalanceResponse getBalanceDTOBittrexResponse = getDataFromBittrex(url, headers, AccountBalanceResponse.class);
+        AccountBalanceResponse bittrexResponse = getDataFromBittrex(url, headers, AccountBalanceResponse.class);
 
-        return getBalanceDTOBittrexResponse;
+        if (bittrexResponse == null) {
+            bittrexResponse = new AccountBalanceResponse();
+            String diagnosticMessage = "NO_INTERNET_CONNECTION";
+            bittrexResponse.setMessage(diagnosticMessage);
+            bittrexResponse.setSuccess(Boolean.FALSE);
+            ApiError apiError = new ApiError("No internet connection", diagnosticMessage);
+            bittrexResponse.setApiError(apiError);
+        } else {
+            if (bittrexResponse.getMessage().equals("INVALID_SIGNATURE")) {
+                ApiError apiError = new ApiError("Bittrex API key or secret is invalid", bittrexResponse.getMessage());
+                bittrexResponse.setApiError(apiError);
+            }
+        }
+
+        return bittrexResponse;
     }
 
     public Map<String, MarketSummaryDTO> getMarketSummary() {

@@ -174,7 +174,7 @@ public class BittrexFragment extends Fragment {
      * @param view
      */
     private void callGetAccountBalance(final View view) {
-        new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
+        new BittrexGetAccountBalanceAsyncTask(getContext(), view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
     }
 
     /**
