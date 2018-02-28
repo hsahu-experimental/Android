@@ -45,6 +45,7 @@ public class BittrexGetOpenOrderAsyncTask extends AsyncTask<Void, Void, OpenOrde
             ((SwipeRefreshLayout)view.findViewById(R.id.bittrexRefresh)).setRefreshing(false);
             mAdapter = new OpenOrderRecyclerViewAdapter(bittrexState.getOpenOrderDTO());
             mRecyclerView.setAdapter(mAdapter);
+            view.findViewById(R.id.openOrderCard).setVisibility(View.VISIBLE);
         }
     }
 }

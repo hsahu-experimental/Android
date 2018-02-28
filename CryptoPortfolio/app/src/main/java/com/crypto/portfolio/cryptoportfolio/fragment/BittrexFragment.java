@@ -97,11 +97,10 @@ public class BittrexFragment extends Fragment {
      * swipe refresh layout on refresh action
      * @param view
      */
-    private void onRefesh(View view){
+    private void onRefreshTab(View view){
         swipeRefreshLayout.setRefreshing(true);
         callGetAccountBalance(view);
         toggleOpenOrderCardViewVisibility(view);
-        toggleAccountBalanceCardVisibility(view);
     }
 
     /**
@@ -125,11 +124,11 @@ public class BittrexFragment extends Fragment {
         mGetOpenOrderLayoutManager = new LinearLayoutManager(getActivity());
         mGetOpenOrderRecyclerView.setLayoutManager(mGetOpenOrderLayoutManager);
 
-        onRefesh(view);
+        onRefreshTab(view);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                onRefesh(view);
+                onRefreshTab(view);
             }
         });
 
@@ -151,7 +150,6 @@ public class BittrexFragment extends Fragment {
     private void toggleOpenOrderCardViewVisibility(final View view) {
         if (showOpenOrders) {
             new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
-            view.findViewById(R.id.openOrderCard).setVisibility(View.VISIBLE);
         } else {
             view.findViewById(R.id.openOrderCard).setVisibility(View.GONE);
         }
@@ -174,7 +172,7 @@ public class BittrexFragment extends Fragment {
      * @param view
      */
     private void callGetAccountBalance(final View view) {
-        new BittrexGetAccountBalanceAsyncTask(getContext(), view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
+        new BittrexGetAccountBalanceAsyncTask(getContext(), view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter, showHoldings).execute();
     }
 
     /**

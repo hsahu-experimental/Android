@@ -27,14 +27,16 @@ public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Acc
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private Context context;
+    private Boolean showHoldings;
 
-    public BittrexGetAccountBalanceAsyncTask(Context context, View view, BittrexClient bittrexClient, BittrexState bittrexState, RecyclerView mRecyclerView, RecyclerView.Adapter mAdapter) {
+    public BittrexGetAccountBalanceAsyncTask(Context context, View view, BittrexClient bittrexClient, BittrexState bittrexState, RecyclerView mRecyclerView, RecyclerView.Adapter mAdapter, Boolean showHoldings) {
         this.view = view;
         this.bittrexClient = bittrexClient;
         this.bittrexState = bittrexState;
         this.mAdapter = mAdapter;
         this.mRecyclerView = mRecyclerView;
         this.context = context;
+        this.showHoldings = showHoldings;
     }
 
     @Override
@@ -63,7 +65,7 @@ public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Acc
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.cancel();
-                        new BittrexGetAccountBalanceAsyncTask(context, view, bittrexClient, bittrexState, mRecyclerView, mAdapter).execute();
+                        new BittrexGetAccountBalanceAsyncTask(context, view, bittrexClient, bittrexState, mRecyclerView, mAdapter, showHoldings).execute();
                     }
                 });
         builder.create().show();
@@ -98,6 +100,11 @@ public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Acc
             mAdapter = new AccountBalanceRecyclerViewAdapter(bittrexState.getGetBalanceDTO());
             mRecyclerView.setAdapter(mAdapter);
             view.findViewById(R.id.btcCard).setVisibility(View.VISIBLE);
+            if (showHoldings) {
+                view.findViewById(R.id.holdingsCard).setVisibility(View.VISIBLE);
+            } else {
+                view.findViewById(R.id.holdingsCard).setVisibility(View.GONE);
+            }
         } else  {
             ((SwipeRefreshLayout)view.findViewById(R.id.bittrexRefresh)).setRefreshing(false);
 
