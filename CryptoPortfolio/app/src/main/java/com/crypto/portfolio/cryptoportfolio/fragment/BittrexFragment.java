@@ -204,10 +204,10 @@ public class BittrexFragment extends Fragment {
                     showOpenOrders = !showOpenOrders;
                     toggleOpenOrderCardViewVisibility(view);
                 }
-                if (key.equals(showMarketKey)) {
-                    showMarket = !showMarket;
-                    // TODO
-                }
+//                if (key.equals(showMarketKey)) {
+//                    showMarket = !showMarket;
+//                    // TODO
+//                }
                 if (key.equals(SharedPreferencesUtils.BITTREX_KEY_NAME)) {
                     bittrexState.setBittrexKey(PreferenceUtils.getString(SharedPreferencesUtils.BITTREX_KEY_NAME, getContext()));
                 }

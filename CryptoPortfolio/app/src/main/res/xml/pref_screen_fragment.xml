@@ -20,43 +20,12 @@
             android:defaultValue="true"
             android:key="pref_bittrex_show_open_orders"
             android:title="Show Open Orders" />
-        <SwitchPreference
-            android:defaultValue="false"
-            android:key="pref_bittrex_show_market"
-            android:title="Show Market"/>
-        <Preference
-            android:key="bittrex_setting_preference"
-            android:title="Manage Bittrex Key"/>
-    </PreferenceCategory>
-    <!--<PreferenceCategory-->
-        <!--android:title="Binance Settings"-->
-        <!--android:key="pref_binance_storage_settings">-->
-        <!--<SwitchPreference-->
-            <!--android:defaultValue="true"-->
-            <!--android:key="pref_binance_show_holdings"-->
-            <!--android:title="Show Account Balance"/>-->
-        <!--<SwitchPreference-->
-            <!--android:defaultValue="true"-->
-            <!--android:key="pref_binance_show_open_orders"-->
-            <!--android:title="Show Open Orders" />-->
         <!--<SwitchPreference-->
             <!--android:defaultValue="false"-->
-            <!--android:key="pref_binance_show_market"-->
+            <!--android:key="pref_bittrex_show_market"-->
             <!--android:title="Show Market"/>-->
-        <!--<PreferenceScreen-->
-            <!--android:title="Manage Binance Key">-->
-            <!--<EditTextPreference-->
-                <!--android:title="Binance Key"-->
-                <!--android:summary="read only"-->
-                <!--android:password="true"-->
-                <!--android:defaultValue="Admin"-->
-                <!--android:dialogTitle="Binance Key" />-->
-            <!--<EditTextPreference-->
-                <!--android:key="mse_password"-->
-                <!--android:title="Binance Secret"-->
-                <!--android:password="true"-->
-                <!--android:summary="read only"-->
-                <!--android:dialogTitle="Binance Secret" />-->
-        <!--</PreferenceScreen>-->
-    <!--</PreferenceCategory>-->
+        <Preference
+            android:key="bittrex_setting_preference"
+            android:title="Manage Bittrex Credentials"/>
+    </PreferenceCategory>
 </PreferenceScreen>
