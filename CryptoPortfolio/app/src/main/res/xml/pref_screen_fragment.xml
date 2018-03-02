@@ -24,21 +24,9 @@
             android:defaultValue="false"
             android:key="pref_bittrex_show_market"
             android:title="Show Market"/>
-        <!--<PreferenceScreen-->
-            <!--android:title="Manage Bittrex Key">-->
-            <!--<EditTextPreference-->
-                <!--android:title="Bittrex Key"-->
-                <!--android:summary="read only"-->
-                <!--android:password="true"-->
-                <!--android:defaultValue="Admin"-->
-                <!--android:dialogTitle="Bittrex Key" />-->
-            <!--<EditTextPreference-->
-                <!--android:key="mse_password"-->
-                <!--android:title="Bittrex Secret"-->
-                <!--android:password="true"-->
-                <!--android:summary="read only"-->
-                <!--android:dialogTitle="Bittrex Secret" />-->
-        <!--</PreferenceScreen>-->
+        <Preference
+            android:key="bittrex_setting_preference"
+            android:title="Manage Bittrex Key"/>
     </PreferenceCategory>
     <!--<PreferenceCategory-->
         <!--android:title="Binance Settings"-->

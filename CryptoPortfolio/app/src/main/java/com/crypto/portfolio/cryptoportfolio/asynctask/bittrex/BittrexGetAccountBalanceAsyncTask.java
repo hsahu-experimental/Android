@@ -107,8 +107,6 @@ public class BittrexGetAccountBalanceAsyncTask extends AsyncTask<Void, Void, Acc
             }
         } else  {
             ((SwipeRefreshLayout)view.findViewById(R.id.bittrexRefresh)).setRefreshing(false);
-
-            System.out.println(accountBalanceResponse.toString());
             if (accountBalanceResponse.getApiError().getDiagnosticMessage().equals("NO_INTERNET_CONNECTION")) {
                 showNoInternetConnectionAlertBox();
             } else {

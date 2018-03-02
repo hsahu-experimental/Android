@@ -111,4 +111,5 @@
 
     <string name="welcome_preference">"welcome_preference"</string>
     <string name="welcome_preference_key">"welcome_preference_key"</string>
+    <string name="bittrex_title_activity_settings">Bittrex Setting</string>
 </resources>

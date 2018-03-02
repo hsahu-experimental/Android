@@ -19,6 +19,9 @@
         <activity
             android:name=".activity.SettingsActivity"
             android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".activity.BittrexCredentialSettingActivity"
+            android:label="@string/bittrex_title_activity_settings" />
         <activity android:name=".activity.HelpActivity" />
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.WelcomeActivity">

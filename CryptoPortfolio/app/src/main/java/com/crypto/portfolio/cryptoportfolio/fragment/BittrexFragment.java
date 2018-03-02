@@ -22,7 +22,7 @@ import com.crypto.portfolio.cryptoportfolio.apiclient.BittrexClient;
 import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetAccountBalanceAsyncTask;
 import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetOpenOrderAsyncTask;
 import com.crypto.portfolio.cryptoportfolio.fragmentstate.BittrexState;
-import com.crypto.portfolio.cryptoportfolio.utils.SettingPreferenceUtils;
+import com.crypto.portfolio.cryptoportfolio.utils.PreferenceUtils;
 import com.crypto.portfolio.cryptoportfolio.utils.SharedPreferencesUtils;
 
 public class BittrexFragment extends Fragment {
@@ -187,9 +187,9 @@ public class BittrexFragment extends Fragment {
 
         Context context = getContext();
 
-        showHoldings = SettingPreferenceUtils.getBoolean(showAccountBalanceKey, context);
-        showMarket = SettingPreferenceUtils.getBoolean(showMarketKey, context);
-        showOpenOrders = SettingPreferenceUtils.getBoolean(showOpenOrderKey, context);
+        showHoldings = PreferenceUtils.getBoolean(showAccountBalanceKey, context);
+        showMarket = PreferenceUtils.getBoolean(showMarketKey, context);
+        showOpenOrders = PreferenceUtils.getBoolean(showOpenOrderKey, context);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
         onSharedPreferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener()
@@ -208,6 +208,12 @@ public class BittrexFragment extends Fragment {
                     showMarket = !showMarket;
                     // TODO
                 }
+                if (key.equals(SharedPreferencesUtils.BITTREX_KEY_NAME)) {
+                    bittrexState.setBittrexKey(PreferenceUtils.getString(SharedPreferencesUtils.BITTREX_KEY_NAME, getContext()));
+                }
+                if (key.equals(SharedPreferencesUtils.BITTREX_SECRET_NAME)) {
+                    bittrexState.setBittrexSecret(PreferenceUtils.getString(SharedPreferencesUtils.BITTREX_SECRET_NAME, getContext()));
+                }
             }
         };
         prefs.registerOnSharedPreferenceChangeListener(onSharedPreferenceChangeListener);
@@ -225,8 +231,8 @@ public class BittrexFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        bittrexState.setBittrexKey(SharedPreferencesUtils.get(SharedPreferencesUtils.BITTREX_KEY_NAME, getContext()));
-        bittrexState.setBittrexSecret(SharedPreferencesUtils.get(SharedPreferencesUtils.BITTREX_SECRET_NAME, getContext()));
+        bittrexState.setBittrexKey(PreferenceUtils.getString(SharedPreferencesUtils.BITTREX_KEY_NAME, getContext()));
+        bittrexState.setBittrexSecret(PreferenceUtils.getString(SharedPreferencesUtils.BITTREX_SECRET_NAME, getContext()));
 
         if (bittrexState.getBittrexKey() != null && bittrexState.getBittrexSecret() != null) {
             return inflateBittrexAccountBalanceFragment(inflater, container);

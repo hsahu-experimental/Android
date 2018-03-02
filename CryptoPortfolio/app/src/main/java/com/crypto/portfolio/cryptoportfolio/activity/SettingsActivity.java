@@ -1,6 +1,10 @@
 package com.crypto.portfolio.cryptoportfolio.activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -13,6 +17,17 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         addPreferencesFromResource(R.xml.pref_screen_fragment);
+
+        final Context context = this.getApplicationContext();
+
+        findPreference("bittrex_setting_preference").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent intent = new Intent(context, BittrexCredentialSettingActivity.class);
+                startActivity(intent);
+                return false;
+            }
+        });
     }
 
     @Override

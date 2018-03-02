@@ -4,9 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-public class SettingPreferenceUtils {
-
-    public static String GENERAL_SETTING = "pref_general_storage_settings";
+public class PreferenceUtils {
 
     private static SharedPreferences sharedpreferences;
 
@@ -14,4 +12,11 @@ public class SettingPreferenceUtils {
         sharedpreferences = PreferenceManager.getDefaultSharedPreferences(context);
         return sharedpreferences.getBoolean(key, false);
     }
+
+    public static String getString(String key, Context context) {
+        sharedpreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return sharedpreferences.getString(key, null);
+    }
+
+
 }
