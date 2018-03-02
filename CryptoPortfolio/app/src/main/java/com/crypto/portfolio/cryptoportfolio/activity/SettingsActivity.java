@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.crypto.portfolio.cryptoportfolio.R;
 
-    public class SettingsActivity extends AppCompatPreferenceActivity {
+public class SettingsActivity extends AppCompatPreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
