@@ -29,4 +29,8 @@
     <string name="welcome_preference">"welcome_preference"</string>
     <string name="welcome_preference_key">"welcome_preference_key"</string>
     <string name="bittrex_title_activity_settings">Bittrex Setting</string>
+
+    <!-- key names -->
+    <string name="bittrex_key">BITTREX_KEY</string>
+    <string name="bittrex_secret">BITTREX_SECRET</string>
 </resources>

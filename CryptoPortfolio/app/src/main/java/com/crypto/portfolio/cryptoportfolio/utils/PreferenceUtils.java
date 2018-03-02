@@ -18,5 +18,10 @@ public class PreferenceUtils {
         return sharedpreferences.getString(key, null);
     }
 
+    public static void setString(String key, String secret, Context context) {
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putString(key, secret);
+        editor.apply();
+    }
 
 }
