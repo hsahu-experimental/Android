@@ -15,7 +15,7 @@ import android.view.MenuItem;
 
 import com.crypto.portfolio.cryptoportfolio.R;
 import com.crypto.portfolio.cryptoportfolio.fragment.TabbedFragment;
-import com.crypto.portfolio.cryptoportfolio.utils.SettingPreferenceUtils;
+import com.crypto.portfolio.cryptoportfolio.utils.PreferenceUtils;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void registerOnSharedPreferenceChangeListener() {
 
         final String hideAppBarKey = getString(R.string.hide_appbar_key);
-        hideAppBar = SettingPreferenceUtils.getBoolean(hideAppBarKey, this);
+        hideAppBar = PreferenceUtils.getBoolean(hideAppBarKey, this);
         toggleAppBarVisibility();
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);

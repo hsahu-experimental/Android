@@ -99,8 +99,8 @@ public class BinanceFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        binanceState.setBinanceKey(SharedPreferencesUtils.get(SharedPreferencesUtils.BINANCE_KEY_NAME, getContext()));
-        binanceState.setBinanceSecret(SharedPreferencesUtils.get(SharedPreferencesUtils.BINANCE_SECRET_NAME, getContext()));
+//        binanceState.setBinanceKey(SharedPreferencesUtils.get(SharedPreferencesUtils.BINANCE_KEY_NAME, getContext()));
+//        binanceState.setBinanceSecret(SharedPreferencesUtils.get(SharedPreferencesUtils.BINANCE_SECRET_NAME, getContext()));
 
         if (binanceState.getBinanceKey() != null && binanceState.getBinanceSecret() != null) {
             return inflateBinanceAccountBalanceFragment(inflater, container);

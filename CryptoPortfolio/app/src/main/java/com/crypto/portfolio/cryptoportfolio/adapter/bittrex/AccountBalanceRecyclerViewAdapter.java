@@ -29,13 +29,11 @@ public class AccountBalanceRecyclerViewAdapter extends RecyclerView.Adapter<Curr
     public void onBindViewHolder(CurrencyViewHolder holder, int position) {
         GetBalanceDTO currency = currencyList.get(position);
         holder.currencyName.setText(currency.getCurrency());
-        holder.currencyCount.setText(String.format("%.6f", currency.getBalance()));
+        holder.currencyCount.setText(String.format("%.8f", currency.getBalance()));
         if (currency.getCurrentPrice() != null) {
             holder.currencyUnitPrice.setText(String.format("%.8f", currency.getCurrentPrice()));
-            holder.currenctTotalPrice.setText(String.format("%.8f", currency.getBalance() * currency.getCurrentPrice()));
         } else {
-            holder.currencyUnitPrice.setText("--");
-            holder.currenctTotalPrice.setText("--");
+            holder.currencyUnitPrice.setText("");
         }
     }
 
@@ -51,13 +49,13 @@ class CurrencyViewHolder extends RecyclerView.ViewHolder {
     public TextView currencyName;
     public TextView currencyCount;
     public TextView currencyUnitPrice;
-    public TextView currenctTotalPrice;
+    //public TextView currenctTotalPrice;
 
     public CurrencyViewHolder(View itemView, int index) {
         super(itemView);
         currencyName = itemView.findViewById(R.id.currencyName);
         currencyCount = itemView.findViewById(R.id.currencyCount);
         currencyUnitPrice = itemView.findViewById(R.id.currencyUnitPrice);
-        currenctTotalPrice = itemView.findViewById(R.id.currenctTotalPrice);
+        //currenctTotalPrice = itemView.findViewById(R.id.currenctTotalPrice);
     }
 }

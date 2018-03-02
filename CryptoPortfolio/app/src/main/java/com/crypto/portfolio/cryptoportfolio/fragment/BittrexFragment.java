@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,16 +15,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.crypto.portfolio.cryptoportfolio.R;
 import com.crypto.portfolio.cryptoportfolio.apiclient.BittrexClient;
 import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetAccountBalanceAsyncTask;
 import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetOpenOrderAsyncTask;
 import com.crypto.portfolio.cryptoportfolio.fragmentstate.BittrexState;
-import com.crypto.portfolio.cryptoportfolio.utils.SettingPreferenceUtils;
-import com.crypto.portfolio.cryptoportfolio.utils.SharedPreferencesUtils;
+import com.crypto.portfolio.cryptoportfolio.utils.PreferenceUtils;
+
 
 public class BittrexFragment extends Fragment {
 
@@ -62,8 +61,6 @@ public class BittrexFragment extends Fragment {
 
         final FloatingActionButton fab = view.findViewById(R.id.addBittrexKey);
 
-        final TextView bittrexBackgroundText = view.findViewById(R.id.bittrexBackgroundText);
-
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,11 +76,16 @@ public class BittrexFragment extends Fragment {
                         EditText bittrex_secret = mView.findViewById(R.id.bittrex_secret);
                         bittrexState.setBittrexKey(bittrex_key.getText().toString());
                         bittrexState.setBittrexSecret(bittrex_secret.getText().toString());
-                        SharedPreferencesUtils.setBittrexPreference(bittrexState.getBittrexKey(), bittrexState.getBittrexSecret());
-                        Toast.makeText(getContext(), "Bittrex key added", Toast.LENGTH_SHORT).show();
+                        PreferenceUtils.setString(getString(R.string.bittrex_key), bittrexState.getBittrexKey(), getContext());
+                        PreferenceUtils.setString(getString(R.string.bittrex_secret), bittrexState.getBittrexSecret(), getContext());
                         dialog.dismiss();
                         fab.setVisibility(View.GONE);
-                        bittrexBackgroundText.setText("account exists.. hitting bittrex api");
+                        Fragment currentFragment = getFragmentManager().findFragmentById(getId());
+                        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                        fragmentTransaction.detach(currentFragment);
+                        fragmentTransaction.attach(currentFragment);
+                        fragmentTransaction.commit();
+
                     }
                 });
                 dialog.show();
@@ -97,11 +99,10 @@ public class BittrexFragment extends Fragment {
      * swipe refresh layout on refresh action
      * @param view
      */
-    private void onRefesh(View view){
+    private void onRefreshTab(View view){
         swipeRefreshLayout.setRefreshing(true);
         callGetAccountBalance(view);
         toggleOpenOrderCardViewVisibility(view);
-        toggleAccountBalanceCardVisibility(view);
     }
 
     /**
@@ -125,11 +126,11 @@ public class BittrexFragment extends Fragment {
         mGetOpenOrderLayoutManager = new LinearLayoutManager(getActivity());
         mGetOpenOrderRecyclerView.setLayoutManager(mGetOpenOrderLayoutManager);
 
-        onRefesh(view);
+        onRefreshTab(view);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                onRefesh(view);
+                onRefreshTab(view);
             }
         });
 
@@ -151,7 +152,6 @@ public class BittrexFragment extends Fragment {
     private void toggleOpenOrderCardViewVisibility(final View view) {
         if (showOpenOrders) {
             new BittrexGetOpenOrderAsyncTask(view, bittrexClient, bittrexState, mGetOpenOrderRecyclerView, mGetOpenOrderAdapter).execute();
-            view.findViewById(R.id.openOrderCard).setVisibility(View.VISIBLE);
         } else {
             view.findViewById(R.id.openOrderCard).setVisibility(View.GONE);
         }
@@ -174,7 +174,7 @@ public class BittrexFragment extends Fragment {
      * @param view
      */
     private void callGetAccountBalance(final View view) {
-        new BittrexGetAccountBalanceAsyncTask(view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter).execute();
+        new BittrexGetAccountBalanceAsyncTask(getContext(), view, bittrexClient, bittrexState, mGetAccountBalanceRecyclerView, mGetAccountBalanceAdapter, showHoldings).execute();
     }
 
     /**
@@ -189,9 +189,9 @@ public class BittrexFragment extends Fragment {
 
         Context context = getContext();
 
-        showHoldings = SettingPreferenceUtils.getBoolean(showAccountBalanceKey, context);
-        showMarket = SettingPreferenceUtils.getBoolean(showMarketKey, context);
-        showOpenOrders = SettingPreferenceUtils.getBoolean(showOpenOrderKey, context);
+        showHoldings = PreferenceUtils.getBoolean(showAccountBalanceKey, context);
+        showMarket = PreferenceUtils.getBoolean(showMarketKey, context);
+        showOpenOrders = PreferenceUtils.getBoolean(showOpenOrderKey, context);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
         onSharedPreferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener()
@@ -206,9 +206,13 @@ public class BittrexFragment extends Fragment {
                     showOpenOrders = !showOpenOrders;
                     toggleOpenOrderCardViewVisibility(view);
                 }
-                if (key.equals(showMarketKey)) {
-                    showMarket = !showMarket;
-                    // TODO
+                if (key.equals(getString(R.string.bittrex_key))) {
+                    bittrexState.setBittrexKey(PreferenceUtils.getString(key, getContext()));
+                    onRefreshTab(view);
+                }
+                if (key.equals(getString(R.string.bittrex_secret))) {
+                    bittrexState.setBittrexSecret(PreferenceUtils.getString(key, getContext()));
+                    onRefreshTab(view);
                 }
             }
         };
@@ -227,8 +231,8 @@ public class BittrexFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        bittrexState.setBittrexKey(SharedPreferencesUtils.get(SharedPreferencesUtils.BITTREX_KEY_NAME, getContext()));
-        bittrexState.setBittrexSecret(SharedPreferencesUtils.get(SharedPreferencesUtils.BITTREX_SECRET_NAME, getContext()));
+        bittrexState.setBittrexKey(PreferenceUtils.getString(getString(R.string.bittrex_key), getContext()));
+        bittrexState.setBittrexSecret(PreferenceUtils.getString(getString(R.string.bittrex_secret), getContext()));
 
         if (bittrexState.getBittrexKey() != null && bittrexState.getBittrexSecret() != null) {
             return inflateBittrexAccountBalanceFragment(inflater, container);

@@ -11,7 +11,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:layout_weight="1.7"
+            android:layout_weight="3"
             android:textStyle="bold" />
 
         <TextView
@@ -20,8 +20,8 @@
             android:id="@+id/currencyCount"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:gravity="end"/>
+            android:layout_weight="5"
+            android:gravity="left"/>
 
         <TextView
             android:layout_marginTop="10dp"
@@ -29,15 +29,6 @@
             android:id="@+id/currencyUnitPrice"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:gravity="end"/>
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:padding="5dp"
-            android:id="@+id/currenctTotalPrice"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
+            android:layout_weight="5"
             android:gravity="end"/>
 </LinearLayout>

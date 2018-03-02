@@ -1,5 +1,7 @@
 package com.crypto.portfolio.cryptoportfolio.dto.response.bittrex.account;
 
+import com.crypto.portfolio.cryptoportfolio.dto.ApiError;
+
 import java.util.List;
 
 public class AccountBalanceResponse {
@@ -7,6 +9,7 @@ public class AccountBalanceResponse {
     private Boolean success;
     private String message;
     private List<GetBalanceDTO> result;
+    private ApiError apiError;
 
     public AccountBalanceResponse() {
         super();
@@ -36,12 +39,21 @@ public class AccountBalanceResponse {
         this.result = result;
     }
 
+    public ApiError getApiError() {
+        return apiError;
+    }
+
+    public void setApiError(ApiError apiError) {
+        this.apiError = apiError;
+    }
+
     @Override
     public String toString() {
         return "AccountBalanceResponse{" +
                 "success=" + success +
                 ", message='" + message + '\'' +
                 ", result=" + result +
+                ", apiError=" + apiError +
                 '}';
     }
 }

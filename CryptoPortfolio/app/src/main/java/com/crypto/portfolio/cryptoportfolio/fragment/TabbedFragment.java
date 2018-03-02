@@ -24,6 +24,7 @@ public class TabbedFragment extends Fragment {
         viewPager = view.findViewById(R.id.viewPager);
         tabLayout = view.findViewById(R.id.tabLayout);
         tabLayout.setTabTextColors(Color.parseColor("#FFFFFF"), Color.parseColor("#FFFFFF"));
+        tabLayout.setElevation(5.0f);
         viewPager.setAdapter(pageAdapter);
         tabLayout.setupWithViewPager(viewPager);
         return view;

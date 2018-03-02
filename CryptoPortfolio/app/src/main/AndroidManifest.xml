@@ -19,12 +19,14 @@
         <activity
             android:name=".activity.SettingsActivity"
             android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".activity.BittrexCredentialSettingActivity"
+            android:label="@string/bittrex_title_activity_settings" />
         <activity android:name=".activity.HelpActivity" />
         <activity android:name=".activity.AboutActivity" />
         <activity android:name=".activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

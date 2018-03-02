@@ -13,7 +13,7 @@ public class ViewPageAdapter extends FragmentStatePagerAdapter {
         super(fragmentManager);
     }
 
-    String[] tabs = {"Bittrex", "Binance"};
+    String[] tabs = {"Bittrex"};
 
     @Override
     public Fragment getItem(int position) {
