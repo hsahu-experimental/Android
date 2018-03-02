@@ -33,4 +33,8 @@
     <!-- key names -->
     <string name="bittrex_key">BITTREX_KEY</string>
     <string name="bittrex_secret">BITTREX_SECRET</string>
+    <string name="pref_general_hide_appbar">pref_general_hide_appbar</string>
+    <string name="pref_bittrex_show_holdings">pref_bittrex_show_holdings</string>
+    <string name="pref_bittrex_show_open_orders">pref_bittrex_show_open_orders</string>
+    <string name="bittrex_setting_preference">bittrex_setting_preference</string>
 </resources>

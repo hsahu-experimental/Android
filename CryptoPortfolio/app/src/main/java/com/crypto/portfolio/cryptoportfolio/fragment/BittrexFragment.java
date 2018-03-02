@@ -15,8 +15,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.crypto.portfolio.cryptoportfolio.R;
 import com.crypto.portfolio.cryptoportfolio.apiclient.BittrexClient;
@@ -25,7 +23,6 @@ import com.crypto.portfolio.cryptoportfolio.asynctask.bittrex.BittrexGetOpenOrde
 import com.crypto.portfolio.cryptoportfolio.fragmentstate.BittrexState;
 import com.crypto.portfolio.cryptoportfolio.utils.PreferenceUtils;
 
-import java.util.List;
 
 public class BittrexFragment extends Fragment {
 
@@ -63,8 +60,6 @@ public class BittrexFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_bittrex, container, false);
 
         final FloatingActionButton fab = view.findViewById(R.id.addBittrexKey);
-
-        final TextView bittrexBackgroundText = view.findViewById(R.id.bittrexBackgroundText);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

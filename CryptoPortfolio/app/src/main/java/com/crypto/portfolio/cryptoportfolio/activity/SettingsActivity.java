@@ -4,9 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.crypto.portfolio.cryptoportfolio.R;
 
@@ -20,7 +18,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
         final Context context = this.getApplicationContext();
 
-        findPreference("bittrex_setting_preference").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+        findPreference(getString(R.string.bittrex_setting_preference)).setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 Intent intent = new Intent(context, BittrexCredentialSettingActivity.class);
